@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D3D3D3"
+    android:orientation="vertical"
+    tools:context=".Recview">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="#FF6813"
+      android:minHeight="?attr/actionBarSize"
+      android:titleTextColor="#000000">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="end"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:src="@drawable/ic_log_out"
+        android:contentDescription="TODO" />
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tab_layout"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="#FF6813"/>
+
+  <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/view_pager2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/tab_layout" />
+
+
+
+</LinearLayout>
